@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#E7E7E3]">
+
+
+    <nav class="flex justify-between p-5 mx-0 rounded-b-2xl shadow-lg w-full">
+        <div class="flex justify-center mr-3">
+            <img src="Images/Logo.png" alt="" class="h-12 w-12 mr-2">
+            <h1 class="text-4xl">Shopping</h1>
+        </div>
+        <div class="flex justify-center w-72 bg-[#FFFEF6] border-none rounded-full mx-3">
+            <input type="text" placeholder="Seacrh" class="w-52 h-10 text-center self-center">
+            <img src="Images/Search.png" alt="" class="h-8 w-8 self-center">
+        </div>
+        <div class="ml-3 flex justify-center">
+            <img src="Images/Profile.JPG" alt="" class="w-12 h-12">
+        </div>
+    </nav>
+
+
+    <main class="m-20 flex flex-wrap justify-center" id="container"></main>
+
+
+    <div class="flex justify-center flex-col">
+        <form id="addProductForm" class="w-full max-w-lg bg-[#FFFEF6] p-6 rounded-lg drop-shadow-md my-10 mx-auto">
+            <h2  class="text-2xl font-semibold mb-4">Add a New Product</h2>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="title">Title</label>
+                <input class="drop-shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="title" type="text" placeholder="Product Title">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="price">Price</label>
+                <input class="drop-shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="price" type="number" placeholder="Product Price">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="description">Description</label>
+                <textarea class="drop-shadow-md appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="description" placeholder="Product Description"></textarea>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="image">Image URL</label>
+                <input class="drop-shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="image" type="text" placeholder="Image URL">
+            </div>
+            <button id="addProductBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                Add Product</button>
+        </form>
+
+        <form id="deleteProductForm" class="w-full max-w-lg bg-[#FFFEF6] p-6 rounded-lg drop-shadow-md my-10 mx-auto">
+            <h2 class="text-2xl font-semibold mb-4">Delete a Product</h2>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="Id">Product Id</label>
+                <input class="drop-shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="Id" type="text" placeholder="Product Id">
+            </div>
+            <button id="deleteProductBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                Delete Product</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
